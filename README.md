@@ -49,7 +49,7 @@ sudo apt-get update && sudo apt-get install --yes docker-ce docker-ce-cli contai
 sudo usermod -aG docker $USER
 
 ## Reminding of changing the MONGODB_HOST TO DNS_OF_RDS
-sudo docker container run -dp 80:8080 -e MONGODB_HOST=DNS_OF_RDS -e MONGODB_USERNAME=mongouser -e MONGODB_PASSWORD=mongopwd harrisonlima/rotten-potatoes:v1
+sudo docker container run -dp 80:8080 -e MONGODB_HOST=DNS_OF_RDS -e MONGODB_USERNAME=mongouser -e MONGODB_PASSWORD=mongopwd harrisonlima/kube-news:v1
 ## To verify if the image is running properly
 sudo docker container ls
 ## After verifying if the container is running properly, you will leave the private machine and return to the public machine:
